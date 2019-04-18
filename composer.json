@@ -1,0 +1,14 @@
+{
+    "name": "ksoft/laravel-ksoft",
+    "description": "Utilities library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kiko Seijo",
+            "email": "kiko@sunnyface.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
