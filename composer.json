@@ -20,7 +20,7 @@
   "extra": {
     "laravel": {
       "providers": [
-        "Ksoft\\Ksoft\\Providers\\KsoftServiceProvider"
+        "Ksoft\\Support\\Providers\\KsoftServiceProvider"
       ]
     }
   },

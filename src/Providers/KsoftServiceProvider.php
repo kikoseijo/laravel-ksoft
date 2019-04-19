@@ -1,6 +1,6 @@
 <?php
 
-namespace Ksoft\Ksoft\Providers;
+namespace Ksoft\Support\Providers;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
