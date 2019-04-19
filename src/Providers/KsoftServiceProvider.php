@@ -26,7 +26,7 @@ class KsoftServiceProvider extends ServiceProvider
     public function register()
     {
         if (!defined('KSOFT_PATH')) {
-            define('KSOFT_PATH', realpath(__DIR__ . '/../'));
+            define('KSOFT_PATH', realpath(__DIR__ . '/../../'));
         }
     }
 
@@ -38,6 +38,7 @@ class KsoftServiceProvider extends ServiceProvider
     protected function registerComponents()
     {
         Blade::component('ksoft::modal', 'modal');
+        Blade::component('ksoft::card', 'card');
 
     }
 
