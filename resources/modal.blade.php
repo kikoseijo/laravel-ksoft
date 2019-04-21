@@ -1,4 +1,4 @@
-<!-- ksoft::modal @modal -->
+<!-- ksoft::modal -->
 <?php $curModalId = isset($modal_id) ? $modal_id : 'modal-'.rand(10000,1111222); ?>
 <div class="modal fade" id="{{$curModalId}}" tabindex="-1" role="dialog" aria-labelledby="{{$curModalId}}Label" aria-hidden="true">
   <div class="modal-dialog modal-{{isset($modal_size)?$modal_size:'sm'}}" role="document">

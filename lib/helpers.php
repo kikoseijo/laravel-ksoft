@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Carbon;
 
 if (!function_exists('route_has')) {
     function route_has($route_name, $params = [], $absolute = true): string
@@ -30,5 +31,12 @@ if (!function_exists('normalizeString')) {
             $res = $text;
         }
         return ucfirst(mb_strtolower($res));
+    }
+}
+
+if (!function_exists('secondsDif')) {
+    function secondsDif(Carbon $date): string
+    {
+        return now()->diffInSeconds($date);
     }
 }

@@ -1,4 +1,4 @@
-<!-- ksoft::card @card, $card_style, $card_class, $card_title, $card_tabs, $reload_btn -->
+<!-- ksoft::card $card_style, $card_class, $card_title, $card_tabs, $reload_btn -->
 <div class="card {{$card_class ?? ''}}"{!! isset($card_style)? ' style="'.$card_style.'"':'' !!}>
     @isset($card_title)
         <div class="card-header">
