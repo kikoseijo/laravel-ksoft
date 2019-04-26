@@ -18,6 +18,17 @@ if (!function_exists('route_has')) {
     }
 }
 
+if (!function_exists('ajax_errors')) {
+    function ajax_errors($message, $title = 'Error')
+    {
+        return [
+            'success' => false,
+            'title' => $title,
+            'message' => $message,
+        ];
+    }
+}
+
 if (!function_exists('normalizeString')) {
     function normalizeString($text, $limit = 0): string
     {
