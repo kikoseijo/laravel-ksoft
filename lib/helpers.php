@@ -21,11 +21,26 @@ if (!function_exists('route_has')) {
 if (!function_exists('ajax_errors')) {
     function ajax_errors($message, $title = 'Error')
     {
+        return ajax_errors_reload($message, $title = 'Error', false);
+    }
+}
+
+if (!function_exists('ajax_errors_reload')) {
+    function ajax_errors_reload($message, $title = 'Error', $reload = true)
+    {
         return [
+            'reaload' => $reload,
             'success' => false,
             'title' => $title,
             'message' => $message,
         ];
+    }
+}
+
+if (!function_exists('ajax_errors')) {
+    function ajax_errors($message, $title = 'Error')
+    {
+        return Carbon::createFromFormat('Y-m-d H:i', array_get($data, 'started_at'));
     }
 }
 
